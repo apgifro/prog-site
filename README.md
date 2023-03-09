@@ -33,4 +33,4 @@ python manage.py runserver
 
 ![screen1](/readme/s1.png)
 
-![screen2](/readme/s1.png)
+![screen2](/readme/s2.png)
