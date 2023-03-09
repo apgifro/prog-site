@@ -2,11 +2,6 @@ from django.db import models
 from stdimage import StdImageField
 
 
-# python manage.py makemigrations
-# python manage.py migrate
-# python manage.py createsuperuser
-
-
 class Base(models.Model):
     criado = models.DateTimeField('Criado', auto_now_add=True)
     modificado = models.DateTimeField('Atualizado', auto_now=True)
