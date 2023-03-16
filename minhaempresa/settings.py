@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
+import django.core.mail.backends.console
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -128,3 +130,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# EMAIL DEPLOY
+# EMAIL_HOST = 'localhost'
+# EMAIL_HOST_USER = 'contato@meuprimeirosite.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_PASSWORD = '123456'
+# DEFAULT_FROM_EMAIL = 'contato@meuprimeirosite.com'
+
+# EMAIL DEVELOPMENT
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
